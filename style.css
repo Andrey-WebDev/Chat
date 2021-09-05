@@ -1,0 +1,175 @@
+/* для блока 1 - шапка */
+#shapka{
+  width: 100%; /* Ширина блока и общая ширина*/
+  background: #161717; /* Цвет фона */
+  height: 50px; /* Высота блока */
+  margin-right: auto; /* Авто-отступ справа */
+  margin-left: auto; /* Авто-отступ слева */
+  padding: 0; /* Внутренние поля вокруг содержимого */
+  font-size: 42px;  /* Размер шрифта */
+  text-align: center;  /* Выравнивание текста */
+  font-family: ‘Open Sans Condensed’, sans-serif;
+  color: #ffffff;
+}
+/* для контейнера */
+#cont {
+  height: 100%; /* Высота слоя */
+  width: 100%; /* Ширина слоя или ширина макета+20px */
+  margin-right: auto; /* Авто-отступ справа */
+  margin-left: auto; /* Авто-отступ слева */
+ }
+/* для блока 2 - меню */
+#menu {
+  max-height: 500px; /* Высота слоя */
+  width: 180px; /* Ширина слоя */ 
+  float: left; /* Обтекание с соседним слоем */ 
+  color: white; /* Цвет текста */
+  background: #2a2e29; /* Цвет фона */
+  padding: 10px; /* Внутренние поля вокруг содержимого */
+  overflow-y: scroll; /* прокрутка по вертикали */
+ }
+/* для блока 3 - контент */
+#chat { /* Правая колонка*/ 
+    max-height: 500px; /* Высота слоя */ 
+    max-width: 1200px; /* Ширина слоя */ 
+    float: none; /* Обтекание с соседним слоем */ 
+    padding: 10px; /* Внутренние поля вокруг содержимого */ 
+    background: #756a70; /* Цвет заднего фона */ 
+    overflow-y: scroll; /* прокрутка по вертикали */ 
+    text-align: justify;
+   } 
+/* для блока 4 - подвал */
+#bottom{
+  height: 100px; /* Высота слоя */
+  width:100%; /* Ширина слоя */ 
+  clear:left; /* возвращаем блочность и располагаем слой слева */
+  background:#444;
+  color:#fff;
+  margin-right: auto; /* Авто-отступ справа */
+  margin-left: auto; /* Авто-отступ слева */
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0;
+}
+
+.container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+.darker {
+    border-color: #ccc;
+    background-color: #ddd;
+}
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+}
+.time-right {
+    float: right;
+    color: #aaa;
+}
+.time-left {
+    float: left;
+    color: #999;
+}
+.user {
+    border: 2px solid #dedede;
+    background-color: #000000;
+    border-radius: 45px;
+    padding: 0px;
+    margin: 10px 0;
+}
+.user img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.users {
+  background: #4f4a4a;
+border-radius: 2px;
+box-shadow: 0 0 6px rgba(0,0,0,0.3);
+text-align: center;  /* Выравнивание текста */
+font-size: 20px;  /* Размер шрифта */
+font-family: ‘Helvetica Neue’, sans-serif;
+}
+html {
+  background: #161717; /* Цвет фона */
+}
+
+::-webkit-scrollbar-button {
+background-image:url('');
+background-repeat:no-repeat;
+width:6px;
+height:0px
+}
+::-webkit-scrollbar-track {
+background-color:#32312e;
+box-shadow:0px 0px 3px #000 inset;
+}
+::-webkit-scrollbar-thumb {
+-webkit-border-radius: 5px;
+border-radius: 5px;
+background-color:#fff;
+box-shadow:0px 1px 1px #fff inset;
+background-image:url('https://yraaa.ru/_pu/24/59610063.png');
+background-position:center;
+background-repeat:no-repeat;
+}
+::-webkit-resizer{
+background-image:url('');
+background-repeat:no-repeat;
+width:7px;
+height:0px
+}
+::-webkit-scrollbar{
+width: 11px;
+}
+
+.social-icons {
+  position:relative; /* добавили */
+  right: 50px;
+  bottom: -50px;; /* добавили */
+  text-align: right; 
+  }  
+.social-icons li {
+  display:inline-block;
+  list-style-type:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  }
+.social-icons li a {
+  border-bottom: none;
+  }
+.social-icons li img {
+  border-radius: 25px;
+  width:30px;
+  height:30px;
+  margin-right: 20px;
+}
+
+#shapka, #cont, #bottom {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
