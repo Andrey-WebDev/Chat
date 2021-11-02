@@ -1,2 +1,2 @@
 # Chat
-Adaptive chat interface
+Rubber chat interface in pure HTML and CSS
